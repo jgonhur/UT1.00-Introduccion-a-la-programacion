@@ -6,10 +6,27 @@ Se puede hacer que el usuario sea quien elija la palabra."""
 p = 'conserje'
 vocales = 'aeiou'
 def contar_vocales(palabra):
-    lista = {'a':0, 'e':0, 'i':0, 'o':0,'u':0}
-    for i in lista
-        count()
-    return contador
+    a = 0
+    e = 0
+    i = 0
+    o = 0
+    u = 0
+
+    for j in palabra:
+        if j == 'a':
+            a += 1
+        elif j == 'e':
+            e += 1
+        elif j == 'i':
+            i += 1
+        elif j == 'o':
+            o += 1
+        elif j == 'u':
+            u += 1
+    letras = [a, e, i, o, u]
+
+    return letras
+
 
 
 

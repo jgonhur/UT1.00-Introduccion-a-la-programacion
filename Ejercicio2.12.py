@@ -7,16 +7,13 @@ n = 6
 def filtrar_palabras(lp,n):
     pgrande = []
     for i in lp:
-        if longitud(lp[i]) > n:
-           pgrande.append(lp[i])
+        if longitud(i) > n:
+            pgrande.append(i)
     return pgrande
-
-
-
 def longitud(c):
     cont = 0
     for i in c:
         cont += 1
     return cont
 
-filtrar_palabras(listap,n)
+print(filtrar_palabras(listap,n))
