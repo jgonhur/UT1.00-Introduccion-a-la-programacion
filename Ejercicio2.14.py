@@ -13,11 +13,9 @@ bin = str(binario)
 def bin_dec(b):
     d = 0
     for i in range(longitud(b)):
-        if b[i-1] == 1:
-            d = d + 2**(i-1)
+        print(i)
+        d += int(b[i])*(2**i)
     return d
-
-
 
 def longitud(c):
     cont = 0
