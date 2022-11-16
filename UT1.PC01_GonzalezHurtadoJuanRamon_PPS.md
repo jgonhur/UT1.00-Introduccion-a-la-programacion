@@ -439,15 +439,73 @@ procedimiento(lista)
 - El bucle for hace una lista con el mismo número.
 - También se puede repetir el elemento de la cadena usando *=
 ~~~
+"""Ejercicio 2.10
+La función max() del ejercicio 1 (primera parte) y la función max_de_tres() del ejercicio
+2 (primera parte), solo van a funcionar para 2 o 3 números. Supongamos que tenemos
+más de 3 números o no sabemos cuántos números son. Escribir una función
+max_in_list() que tome una lista de números y devuelva el más grande."""
+
+lista = [1,654,54,54,65,132,1323,3,50,1,61,6,41,3,-62035]
+
+def max_in_list(lista):
+    max = lista[0]
+    for i in lista:
+        if i > max:
+            max = i
+    return max
+
+print(max_in_list(lista))
+~~~
+- Declaramos una acumulador, inicializado con el primer valor, para que al final guarde
+el valor máximo.
+- Uso de estructurasde control.
+~~~
+"""Ejercicio 2.11
+Escribir una función mas_larga() que tome una lista de palabras y devuelva la más larga."""
+
+lista = ['patata','pionono de patas verdes blanco','pato','alambrada','barba','ornitorrinco','anacardo','bandera','pionono de patas verdes']
+
+def mas_larga(p):
+    plarga = p[0]
+    for i in p:
+        if longitud(i) > longitud(plarga):
+            plarga = i
+    return plarga
+
+def longitud(c):
+    cont = 0
+    for i in c:
+        cont += 1
+    return cont
+
+
+print(mas_larga(lista))
+~~~
+- Uso de bucles for, contadores, estructuras de control y cadena de caracteres.
+- Calcula la longitud de las palabras y las guarda en una lista "plarga".
 
 ~~~
+"""Ejercicio 2.12
+Escribir una función filtrar_palabras() que tome una lista de palabras y un entero n, y
+devuelva las palabras que tengan más de n caracteres."""
 
-~~~
-~~~
+listap=['marco','polo','do','it','faster','stronger','onomastica']
+n = 6
+def filtrar_palabras(lp,n):
+    pgrande = []
+    for i in lp:
+        if longitud(i) > n:
+            pgrande.append(i)
+    return pgrande
+def longitud(c):
+    cont = 0
+    for i in c:
+        cont += 1
+    return cont
 
+print(filtrar_palabras(listap,n))
 ~~~
-~~~
-
+- Usa la función append, que añade los elementos a la lista que precede al punto
 ~~~
 ~~~
 
