@@ -250,7 +250,7 @@ def tresdiv():
 
 tresdiv()
 ~~~
-- Uso de la estructura conficional **while**.
+- Uso del bucle **while**.
 - En la función print **end=""** sirve para que Python **no salte por defecto a la siguiente línea**.
 - Uso de un **contador** dentro del bucle while que controlará la duración del bucle.
 ~~~
@@ -266,9 +266,93 @@ def max(num1,num2):
         print(f"El número mayor es {num1}")
     elif(num2>num1):
         print(f"El número mayor es {num2}")
+    else:
+        print(f"{num1} y {num2} son iguales")
 ~~~
 - Uso de funciones, estructuras condicionales.
-- La función hace uso de dos parámetros para su comparación
+- La función hace uso de dos parámetros para su comparación.
+~~~
+"""Ejercicio 2.2
+Definir una función max_de_tres(), que tome tres números como argumentos y
+devuelva el mayor de ellos."""
+
+def max_de_tres(num1,num2,num3):
+    mayor = 0
+        if num1 >= num2:
+            mayor = num1
+        elif num2 >= mayor:
+            mayor = num2
+        elif num3 >= mayor:
+            mayor = num3
+        print(mayor)
+
+max_de_tres(1,3,4)
+~~~
+- Uso de funciones, estructuras condicionales.
+- Se introducen en la función tres parámetros.
+~~~
+"""Ejercicio 2.3
+Definir una función que calcule la longitud de una lista o una cadena dada. (Es cierto
+que python tiene la función len() incorporada, pero escribirla por nosotros mismos
+resulta un muy buen ejercicio."""
+
+
+def longitud(cadena):
+    a = 0
+    if type(cadena) == str:
+        for i in cadena:
+                a += 1
+        return a
+    else:
+        print("Cadena no válida")
+~~~
+- Uso del **contador** a, para determinar el número de letras en la palabra introducida
+como parámetro. Este número de letras determinaría la longitud de la cadena.
+- Uso de control de errores, comprobando si la cadena es una variable de tipo string o no.
+- Uso de bucle for para recorrer los elementos de la cadena
+~~~
+"""Ejercicio 2.4
+Escribir una función que tome un carácter y devuelva True si es una vocal, de lo
+contrario devuelve False."""
+
+
+def vocal(caracter):
+    vocales= ['a','e','i','o','u','A','E','I','O','U']
+    if caracter in vocales:
+        print("True")
+    else:
+        print("False")
+
+vocal('I')
+~~~
+- Se declara una lista con las vocales en minúsculas y mayúsculas, para comprobar
+si coincide el elemento de la cadena con un elemento de la lista.
+~~~
+"""Ejercicio 2.5
+Escribir una función sum() y una función multip() que sumen y multipliquen
+respectivamente todos los números de una lista. Por ejemplo: sum([1,2,3,4]) debería
+devolver 10 y multip([1,2,3,4]) debería devolver 24."""
+
+lista=[1,2,3,9]
+
+def sum(lista):
+    total = 0
+    for i in lista:
+        total = total + i
+    print(total)
+
+
+def multip(lista):
+    total = 1
+    for i in lista:
+        total = total * i
+    print(total)
+
+sum(lista)
+multip(lista)
+~~~
+- Uso de funciones, bucles for y llamadas a las funciones, usando la lista de números
+como parámetro para ambas.
 ~~~
 ~~~
 
