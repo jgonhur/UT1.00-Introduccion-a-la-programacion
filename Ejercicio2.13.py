@@ -10,7 +10,7 @@ def pide_cadena(cad):
         cont = 0
     else:
         for i in cad:
-            if i.isupper() == True: """Comprueba letra por letra si es mayúscula o no, y suma 1 en el contador si lo es."""
+            if i.isupper() == True:
                 cont += 1
     return cont
 

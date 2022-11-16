@@ -4,14 +4,13 @@ Imprimir la cantidad de personas con edades superiores a 20.
 Puedes variar el ejercicio para que sea el usuario quien ingrese las edades."""
 
 print("Introduzca 10 edades diferentes")
-cantidad = input("introduce cantidad de edades: ")
 
-def edad_superior(n):
+def edad_superior():
     listae = []
-    for i in range(n):
+    for i in range(9):
         a = input()
         if int(a) > 20:
             listae.append(a)
     print(listae)
 
-edad_superior(cantidad)
+edad_superior()

@@ -3,12 +3,13 @@ Escribir una función filtrar_palabras() que tome una lista de palabras y un ent
 devuelva las palabras que tengan más de n caracteres."""
 
 listap=['marco','polo','do','it','faster','stronger','onomastica']
-
+n = 6
 def filtrar_palabras(lp,n):
-    pgrande = lp[0]
-    for i in pgrande:
-        if longitud(i) > n:
-            pgrande.append[i]
+    pgrande = []
+    for i in lp:
+        if longitud(lp[i]) > n:
+           pgrande.append(lp[i])
+    return pgrande
 
 
 
@@ -18,4 +19,4 @@ def longitud(c):
         cont += 1
     return cont
 
-filtrar_palabras(listap,6)
+filtrar_palabras(listap,n)
