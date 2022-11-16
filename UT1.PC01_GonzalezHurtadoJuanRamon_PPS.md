@@ -354,6 +354,92 @@ multip(lista)
 - Uso de funciones, bucles for y llamadas a las funciones, usando la lista de números
 como parámetro para ambas.
 ~~~
+"""Ejercicio 2.6
+Definir una función inversa() que calcule la inversión de una cadena. Por ejemplo la
+cadena "estoy probando" debería devolver la cadena "odnaborp yotse"""
+
+cadena='estoy probando'
+
+def inverso(patata):
+    anedac = ''
+    l=longitud(patata)
+    for i in range(l):
+        anedac = anedac + patata[l-1-i]
+    return anedac
+
+def longitud(cadena):
+    a = 0
+    if type(cadena) == str:
+        for i in cadena:
+                a += 1
+    else:
+        print("Cadena no válida")
+    return a
+
+print(inverso(cadena))
+~~~
+- Declaración de una cadena de caracteres vacía.
+- Uso de función longitud (sustituyendo len).
+- El bucle for lee la cadena desde el final al principio, introduciéndola en la variable
+anedac.
+
+~~~
+"""Ejercicio 2.7
+Definir una función superposicion() que tome dos listas y devuelva True si tienen al
+menos 1 miembro en común o devuelva False de lo contrario. Escribir la función usando
+el bucle for anidado."""
+
+lista1 = [11,4,2,3235,21,3,5,27]
+lista2= [1,78,45,34,23]
+
+def superposicion(l1,l2):
+    sw = 'False'
+    for i in l1:
+        for j in l2:
+            if j == i:
+                sw = 'True'
+    return sw
+
+print(superposicion(lista1,lista2))
+~~~
+- Uso de switch para marcar el cumplimiento de una condición. Este indica cuándo se cumple
+la condición de que un elemento de una lista, sea igual a un elemento de la otra.
+~~~
+"""Ejercicio 2.8
+Definir una función generar_n_caracteres() que tome un entero n y devuelva el
+caracter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver
+"xxxxx"."""
+
+def generar_n_caracteres(n,letra):
+    cadena = ''
+    for i in range(n):
+        cadena = cadena + letra
+    return cadena
+
+print(generar_n_caracteres(5,'pito '))
+
+~~~
+- Uso de cadenas de caracteres y bucle for para recorrerla.
+~~~
+"""Ejercicio 2.9
+Definir un histograma procedimiento() que tome una lista de números enteros e
+imprima un histograma en la pantalla. Ejemplo: procedimiento([4, 9, 7]) debería imprimir
+lo siguiente:"""
+
+lista = [2,4,6,7,1,4,5,8,1,8,3,17,8]
+
+def procedimiento(l):
+    for i in l:
+        for j in range(i):
+            print(f"{i} ",end = "")
+        print()
+procedimiento(lista)
+~~~
+- Lista los números en filas, de manera que crea un histograma.
+- El bucle for hace una lista con el mismo número.
+- También se puede repetir el elemento de la cadena usando *=
+~~~
+
 ~~~
 
 ~~~
@@ -367,6 +453,13 @@ como parámetro para ambas.
 
 ~~~
 ~~~
+
+~~~
+~~~
+
+~~~
+~~~
+
 
 
 
