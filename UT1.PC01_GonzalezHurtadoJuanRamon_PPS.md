@@ -529,14 +529,6 @@ else:
     print(f"La cadena tiene {pide_cadena(cadena)} mayúsculas")
 ~~~
 
-~~~
-~~~
-
-~~~
-~~~
-
-~~~
-~~~
 
 
 
